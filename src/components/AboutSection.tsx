@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-host.jpg";
+import aboutPhoto from "@/assets/about-photo.png";
 
 const AboutSection = () => {
   return (
@@ -13,7 +13,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
           >
             <img
-              src={heroImage}
+              src={aboutPhoto}
               alt="Ведущий"
               className="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover"
               loading="lazy"

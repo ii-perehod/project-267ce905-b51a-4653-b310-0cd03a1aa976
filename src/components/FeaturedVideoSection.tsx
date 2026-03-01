@@ -26,7 +26,7 @@ const FeaturedVideoSection = () => {
         >
           <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-foreground/5">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://rutube.ru/play/embed/738a2169e4b82fc5779f4ca3ba08a1f5"
               title="Главное видео ведущего"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
