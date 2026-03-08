@@ -48,7 +48,7 @@ const ReviewsSection = () => {
             <CarouselContent>
               {reviews.map((review, i) => (
                 <CarouselItem key={i}>
-                  <div className="bg-card rounded-2xl p-10 shadow-sm border border-border text-center">
+                  <div className="bg-card rounded-2xl p-5 sm:p-10 shadow-sm border border-border text-center">
                     <div className="flex justify-center gap-1 mb-6">
                       {[...Array(5)].map((_, j) => (
                         <Star key={j} size={20} className="fill-primary text-primary" />
