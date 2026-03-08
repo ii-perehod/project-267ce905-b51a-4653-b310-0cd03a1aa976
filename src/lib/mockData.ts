@@ -148,6 +148,15 @@ export const saveAbout = (data: AboutData) => save("about", data);
 export const getContact = (): ContactData => load("contact", defaultContact);
 export const saveContact = (data: ContactData) => save("contact", data);
 
+export const getGallery = (): GalleryPhoto[] => load("gallery", defaultGallery);
+export const saveGallery = (data: GalleryPhoto[]) => save("gallery", data);
+
+export const getVideos = (): VideoItem[] => load("videos", defaultVideos);
+export const saveVideos = (data: VideoItem[]) => save("videos", data);
+
+export const getFeaturedVideo = (): FeaturedVideo => load("featuredVideo", defaultFeaturedVideo);
+export const saveFeaturedVideo = (data: FeaturedVideo) => save("featuredVideo", data);
+
 // Auth (mock)
 const ADMIN_USER = "admin";
 const ADMIN_PASS = "admin123";
