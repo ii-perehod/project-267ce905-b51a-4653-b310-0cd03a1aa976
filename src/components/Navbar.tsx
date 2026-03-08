@@ -14,6 +14,15 @@ const links = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const handleClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16">
@@ -27,6 +36,7 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
+              onClick={(e) => handleClick(e, l.href)}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
@@ -34,6 +44,7 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
+            onClick={(e) => handleClick(e, "#contact")}
             className="bg-primary text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             Заявка
