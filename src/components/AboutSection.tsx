@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-host.jpg";
+import aboutImage from "@/assets/about-host.jpg";
 
 const AboutSection = () => {
   return (
@@ -14,7 +14,7 @@ const AboutSection = () => {
             className="flex justify-center"
           >
             <img
-              src={heroImage}
+              src={aboutImage}
               alt="Игорь Моисеенко — ведущий"
               className="rounded-2xl shadow-2xl w-full max-w-md aspect-[3/4] object-cover object-[center_top]"
               loading="lazy"
