@@ -3,9 +3,9 @@ import heroImage from "@/assets/hero-host.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-12 md:py-24 bg-background">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,7 +30,7 @@ const AboutSection = () => {
             <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
               Обо мне
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 text-foreground">
               Более 10 лет создаю незабываемые праздники
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">

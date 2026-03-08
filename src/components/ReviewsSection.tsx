@@ -27,7 +27,7 @@ const reviews = [
 
 const ReviewsSection = () => {
   return (
-    <section id="reviews" className="py-24 bg-secondary/30">
+    <section id="reviews" className="py-12 md:py-24 bg-secondary/30">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -43,12 +43,12 @@ const ReviewsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto px-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-12">
           <Carousel opts={{ loop: true }}>
             <CarouselContent>
               {reviews.map((review, i) => (
                 <CarouselItem key={i}>
-                  <div className="bg-card rounded-2xl p-10 shadow-sm border border-border text-center">
+                  <div className="bg-card rounded-2xl p-5 sm:p-10 shadow-sm border border-border text-center">
                     <div className="flex justify-center gap-1 mb-6">
                       {[...Array(5)].map((_, j) => (
                         <Star key={j} size={20} className="fill-primary text-primary" />
