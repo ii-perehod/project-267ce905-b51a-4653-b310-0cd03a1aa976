@@ -17,15 +17,15 @@ const HeroSection = () => {
 
       <div className="container relative z-10 py-16 pb-20 sm:py-20">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.4 }}
           className="max-w-2xl text-primary-foreground"
         >
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.1 }}
             className="text-sm sm:text-lg md:text-xl mb-2 md:mb-4 font-light tracking-widest uppercase opacity-90"
           >
             Профессиональный ведущий
